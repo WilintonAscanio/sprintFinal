@@ -1,0 +1,719 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+    font-style: normal;
+}
+body{
+    background-color: #fafaf8;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.5% 2.5%;
+    background-color: #FEFEFE;
+}
+.carrito{
+    width: 50%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.location{
+    border-right: 1px solid #9b9b95;
+    padding-right: 10px;
+}
+.figures{
+    display: flex;
+    gap: 5px;
+}
+.location p{
+    font-weight: 800;
+}
+nav h2{
+    color: rgb(21, 170, 21);
+    width: 50%;
+}
+.btnCarrito{
+    background-color: #0AC763;
+    border-radius: 5px;
+    width: 80px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    margin-left:10px;
+}
+.btnCarrito img{
+    height: 70%;
+}
+.btnCarrito p{
+    color: white;
+}
+.banner{
+    width: 95%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    background-image: url('./images/banner.png');
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+    padding: 7.5%;
+}
+.bannerP{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+.cardProducts{
+    height: 100%;
+    width: 95%;
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    border-radius: 5px;
+    padding: 3%;
+    background-color: white;
+    border-radius: 10px;
+
+}
+.mainContainer{
+    margin-top: 40px;
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+.cardProduct{
+    background-color: white;
+    width: 190px;
+    height: 380px;
+    border-radius: 8px;
+
+}
+.titles{
+    font-weight: 600;
+    font-size: 22px;
+}
+.descuento{
+    color: #5E18BB;
+    background-color: #F0E3FE;
+    width: 80px;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: 700;
+    padding: 5px;
+
+}
+.prices{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    gap: 5px;
+
+}
+.prices p{
+    text-decoration-line: line-through;
+    color: #9b9b95;
+}
+.btnProduct{
+
+    background: #0AC763;
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+    color: white;
+    border: transparent;
+}
+
+.descripcion{
+    height: 12%;
+}
+.imgProduct{
+    width: 100%;
+    height: 150px;
+}
+.gramos{
+    color: #9b9b95;
+    margin-top: 30%;
+}
+#btnProduct1{
+    margin-top: 30%;
+}
+#btnProduct2{
+    margin-top: 10px;
+}
+.modal{
+    height: 100vh;
+    padding: 0% 5%;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #111111bd;
+    pointer-events: none;
+    display:flex;
+    opacity: 0;
+    transition: opacity .3s .3s;
+    --transform: translateY(-200vh);
+    --transition: transform .3s;
+
+}
+.modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .3s;
+    --transform: translateY(0);
+    --transition: transform .3s .5s;
+
+
+
+}
+.aa{
+    text-decoration: none;
+}
+
+
+.modal__container{
+    width: 80%;
+    height: 100%;
+    padding: 0% 2%;
+    background-color: #fff ;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    transform: var(--transform);
+    transition: transform .3s;
+    transition: var(--transition);
+
+}
+
+.topModal{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 1%;
+
+}
+#selectTopRight{
+    width: 100%;
+}
+.leftTopModal{
+    width: 50%;
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding-right: 5%;
+}
+#imgModal{
+    width: 100%;
+    height: 250px;
+
+    
+}
+#nameClient{
+    padding-left: 3%;
+}
+
+#nameProductModal{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 25px;
+}
+#spanPrecio{
+    font-size: 31px;
+
+}
+#ivaP{
+    font-size: 12px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+#descripcionTopModal{
+    padding-right: 10%;
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+.secciones{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(194, 183, 183);
+    height: 40px;
+    border-radius: 5px;
+    padding: 8px;
+}
+.opciones{
+    margin-top: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid rgb(194, 183, 183);
+    height: 40px;
+    color: #131815;
+    border-radius: 5px;
+    padding: 2%;
+    outline: none;
+}
+.options{
+    color: black;
+}
+.confirmProduct{
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#agregarProduct{
+    background-color: #0AC763;
+    color: white;
+    width: 50%;
+    height: 40px;
+    border: transparent;
+    border-radius: 8px;
+
+}
+
+.rightTopModal {
+        width: 50%;
+}
+#closeBtn{
+    width: 100%;
+    text-align: end;
+    background-color: white;
+    border: transparent;
+
+}
+#mainContainer3{
+    margin-top: 20px;
+    height: 100%;
+}
+
+.titles{
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.prices3{
+    margin-bottom: 2%;
+    display: flex;
+    gap: 5px;
+
+}
+.prices3 p{
+    text-decoration-line: line-through;
+    color: #9b9b95;
+    margin-bottom: 5%;
+}
+
+.descripcion3{
+    height: 14%;
+}
+.imgProduct3{
+    width: 100%;
+    height: 100px;
+}
+
+#btnProduct3{
+    margin-top: 3%;
+}
+.productosRelacionados p{
+    font-weight: 800;
+}
+.spanSwal{
+    font-size: 12px;
+}
+.navHtml2{
+    height: 40px;
+}
+.pagoHtml{
+    width: 95%;
+    height: 100vh;
+    margin: 2.5% 2.5%;
+}
+.topHtml2{
+
+    display: flex;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+   
+}
+.pagos{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #fafaf8;
+}
+.leftSidePago{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 1% 3%;
+    background-color: white;
+
+}
+.infoProduct{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    height: 80px;
+    align-items: center;
+    padding-top: 5px;
+    border-bottom: 1px solid #eeeee4;
+
+}
+.rightSidePago{
+    width: 50%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+#imgPago{
+    margin-left: 10%;
+    height: 55px;
+}
+.productPago{
+    justify-content: center;
+    height: 55px;
+    padding-left: 8%;
+}
+.productPago p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.productPago span{
+    font-weight: 700;
+}
+.btnPago{
+    display: flex;
+    height: 75px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.btnPagoC{
+    display: flex;
+    height: 75px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15%;
+}
+.valor{
+    background-color: rgb(238, 233, 233);
+    height: 30px;
+    width: 70px;
+    border: transparent;
+    text-align: center;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+.btnMM{
+    background-color: rgb(247, 244, 244);
+    width: 40px;
+    height: 30px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+}
+.btnMMc{
+    background-color: rgb(247, 244, 244);
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border: transparent;
+    border-radius: 5px;
+}
+.errorHidden{
+    color: red;
+    font-size: 10px;
+    visibility: hidden;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+.infoCard{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    border: 1px solid rgb(221, 218, 212);
+    padding: 2px;
+}
+.expDate{
+    display: flex;
+    grid-template-columns: auto auto;
+    
+    
+}
+.fecha{
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+    
+
+}
+.security{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+
+}
+.cvc{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 2px;
+}
+#submit{
+    border-radius: 8px;
+    margin-top: 5%;
+    background-color: #0AC763;
+    color: white;
+    border: transparent;
+    height: 40px;
+}
+.input{
+    height: 30px;
+    border-radius: 8px;
+    border: transparent;
+    box-shadow: 0px 0px 2px #aca7a4;
+}
+
+.infoClient{
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.inInput{
+    border-radius: 5px;
+    width: 70%;
+    height: 25px;
+    border: transparent;
+    padding-left: 10px;
+    outline: none;
+}
+
+.labels{
+    margin-bottom: 10px;
+}
+#label1{
+    padding-left: 3%;
+}
+.labels2{
+    margin-top: 15px;
+}
+.figuresPago{
+    height: 18px;
+    width: 50%;
+    gap: 2px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#containerOptions{
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.locations{
+    position: fixed;
+    top: 0;
+    width: 46%;
+    height: 40%;
+    background-color: white;
+    margin: 3% 27% ;
+    padding: 1% 3%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.locationModalImg{
+    display: flex;
+    justify-content: end;
+}
+.locationModal{
+    font-size: 22px;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.locationModal2{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 2%;
+}
+#btnModalLocation{
+    margin-top: 3%;
+    background-color: #0AC763;
+    color: white;
+    border: transparent;
+    border-radius: 8px;
+    font-size: 15px;
+    height: 15%;
+    
+}
+#containerOptions{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 7% auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #aca7a4;
+   
+}
+.imgLocationModal{
+    display: flex;
+    justify-content: end;
+    padding: 5px 0px;
+
+
+}
+#optionsSelect{
+    border: transparent;
+    border-radius: 5px;
+    outline: none;
+}
+
+.modalCarrito{
+    width: 100vw;
+    height: 100vh;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #111111bd;
+    display:flex;
+    transition: opacity .6s .9s;
+    --transition: transform .8s;
+
+}
+.carritoModal{
+    margin-right: 1.5%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+
+}
+.headerModalCarrito{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 5%;
+}
+.headerModalCarrito p{
+    font-size: 13px;
+}
+.carritoVacio{
+    width: 100%;
+    display: flex;
+    margin-top: 35%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.carritoVacio p{
+    font-size: 17px;
+}
+#btnCarrito{
+    background-color: #0AC763;
+    color: white;
+    border: transparent;
+    height: 33px;
+    width: 37%;
+    font-size: 12px;
+    border-radius: 8px;
+    pointer-events: unset;
+}
+.hidden{
+    display: none;
+}
+.pointer:hover{
+    cursor: pointer;
+    opacity: .5;
+    transition: opacity .5s;
+}
+.check{
+    display: flex;
+    gap: 10px;
+}
+.carritoLleno{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btnPagoCarrito{
+    background-color: white;
+    height: 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5%;
+    color: #9b9b95;
+}
+#btnPagoCarrito{
+    background-color:#0AC763;
+    border: transparent;
+    color: white;
+}
+.vaciarCanasta{
+    background-color: white;
+    width: 40%;
+}
+.btnPagoCarritoBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    background-color: #0AC763;
+    color: white;
+    height: 50%;
+    border-radius: 8px;
+    padding: 0% 2%;
+}
+
+#quantity{
+    display: flex;
+    justify-content: center;
+    background-color: #2e7e78;
+    width: 14%;
+    border-radius: 5px;
+}
+.swalA{
+    color:white;
+    text-decoration: none;
+}
+.errorHidden{
+    
+    visibility: hidden;
+}
+.invisible{
+    display: none;
+    color: red;
+    font-size: 7px;
+}
+.errorHidden{
+    color: red;
+    font-size: 7px;
+    /* visibility: hidden; */
+}

@@ -1,0 +1,190 @@
+{
+    "products":[
+        {
+            "id":1,
+            "descuento":32,
+            "img":"./images/limon.png",
+            "price":26.82,
+            "priceDescuento":39.9,
+            "description":"Limon con semilla"
+        },
+        {
+            "id":2,
+            "descuento":32,
+            "img":"./images/tomate.png",
+            "price":"21.79",
+            "priceDescuento":32.9,
+            "description":"Tomate"
+        },
+        {
+            "id":3,
+            "descuento":7,
+            "img":"./images/cocacolazero.png",
+            "price":26,
+            "priceDescuento":28,
+            "description":"Coca-Cola sin Azucar"
+            
+        },
+        {
+            "id":4,
+            "descuento":13,
+            "img":"./images/nopal.png",
+            "price":25.8,
+            "priceDescuento":29.9,
+            "description":"Nopal limpio"
+        },
+        {
+            "id":5,
+            "descuento":8,
+            "img":"./images/tomateverde.png",
+            "price":22.89,
+            "priceDescuento":24.9,
+            "description":"Tomate verde sin cascara"
+        },
+        {
+            "id":6,
+            "descuento":18,
+            "img":"./images/aguacates.png",
+            "price":56.8,
+            "priceDescuento":69.9,
+            "description":"Aguacates Hass"
+        },
+        {
+            "id":7,
+            "descuento":7,
+            "img":"./images/cocacola.png",
+            "price":12.9,
+            "priceDescuento":14,
+            "description":"Coca-Cola"
+        },
+        {
+            "id":8,
+            "img":"./images/pechuga.png",
+            "price":62.5,
+            "priceDescuento":"",
+            "description":"San Rafael pechuga de pavo",
+            "gramos":"250 g ($0.25/gr)"
+        },
+        {
+            "id":9,
+            "img":"./images/pan.png",
+            "price":38.9,
+            "priceDescuento":"",
+            "description":"Bimbo Pan Blanco Grande",
+            "gramos":"680 g ($0.6/gr)"
+        },
+        {
+            "id":10,
+            "img":"./images/mayonesa.png",
+            "price":48.5,
+            "priceDescuento":"",
+            "description":"Mc Cormick Mayonesa",
+            "gramos":"507 g ($0.1/gr)"
+        },
+        {
+            "id":11,
+            "img":"./images/cremaDental.png",
+            "price":35.5,
+            "priceDescuento":"",
+            "description":"Colgate Pasta Dental Triple Familiar 2 U",
+            "gramos":"125 g ($0.28/ml)"
+        },
+        {
+            "id":12,
+            "img":"./images/huevos.png",
+            "price":37.5,
+            "priceDescuento":"",
+            "description":"Huevos San Juan",
+            "gramos":"18 Und ($2.08/u)"
+        },
+        {
+            "id":13,
+            "img":"./images/ariel.png",
+            "price":26,
+            "priceDescuento":28,
+            "description":"Detergente Ariel",
+            "gramos":"2 L ($18.95/l)"
+        },
+        {
+            "id":14,
+            "img":"./images/postobon.png",
+            "price":12.9,
+            "priceDescuento":14,
+            "description":"Gaseosas",
+            "gramos": "3 L ($4.3/l)"
+        }
+    ],
+    "direcciones":[
+        
+        {
+            "id":1,
+            "departamento":"Cesar",
+            "ciudad":"Valledupar"
+
+        },
+        {
+            "id":2,
+            "departamento":"Cesar",
+            "ciudad":"Agusstín Codazzi"
+
+        },
+        {
+            "id":3,
+            "departamento":"Atlántico",
+            "ciudad":"Barranquilla"
+
+        },
+        {
+            "id":4,
+            "departamento":"Bolivar",
+            "ciudad":"Cartagena"
+
+        },
+        {
+            "id":5,
+            "departamento":"Magdalena",
+            "ciudad":"Santa Marta"
+
+        },
+        {
+            "id":6,
+            "departamento":"Cundinamarca",
+            "ciudad":"Bogotá"
+
+        },
+        {
+            "id":7,
+            "departamento":"Antioquia",
+            "ciudad":"Medellín"
+
+        },
+        {
+            "id":8,
+            "departamento":"Norte de Santander",
+            "ciudad":"Ocaña"
+
+        },
+        {
+            "id":9,
+            "departamento":"Santander",
+            "ciudad":"Bucaramanga"
+
+        },
+        {
+            "id":10,
+            "departamento":"Norte de Santander",
+            "ciudad":"Cúcuta"
+
+        }
+    ],
+    
+    "carrito":[
+        {
+            "id":"1",
+            "img":"1",
+            "description":"1",
+            "price":"1"
+        }
+
+    ]
+}

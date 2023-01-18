@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="all" id="all">
+        <nav>
+            <h2>Mi Tiendita</h2>
+            <div class="carrito ">
+                <figure class="figures location pointer" id="location">
+                    <img src="./images/location.png" alt="location">
+                    <p id="cityTop">Selecciona tu dirección</p>
+                </figure>
+                <figure class="figures btnCarrito pointer" id="btnCarritoNav">
+                    <img src="./images/carrito.png" alt="logo">
+                    <p id="quantityTop">0</p>
+    
+                </figure>
+            </div>
+        </nav>
+    
+        <div class="banner">
+            <p class="bannerP">
+                ¡Adquiere todos tus productos favoritos al mejor precio!
+            </p>
+        </div>
+    
+        <article class="cardProducts">
+            <p class="titles">Ofertas</p>
+            <main id="mainContainer" class="mainContainer">
+    
+            </main>
+    
+    
+        </article>
+        <article class="cardProducts">
+            <p class="titles">Los más populares</p>
+            <main id="mainContainer2" class="mainContainer">
+    
+            </main>
+            </div>
+    
+    
+        </article>
+        <section class="modal">
+            <div class="modal__container" id="modal__container">
+                <div class="allModal" id="allModal">
+                    <section class="topModal" id="topModal">
+                       
+                    </section>
+    
+                </div>
+                <section class="productosRelacionados">
+                    <p>Productos relacionados</p>
+                    <div class="mainContainer" id="mainContainer3">
+    
+                    </div>
+                </section>
+    
+            </div>
+    
+        </section>
+    
+        <article id="carrito" class="modalCarrito hidden">
+            <div class="carritoModal">
+                <div class="headerModalCarrito">
+                    <p>
+                        Entregar en: <strong id="cityCarrito">Selecciona tu dirección</strong>
+                    </p>
+                    <figure class="pointer">
+                        <img src="./images/cancel.png" id="btnCancelModalCarrito">
+                    </figure>
+    
+                </div>
+    
+                <div class="carritoVacio hidden" id="carritoVacio">
+                    <figure>
+                        <img src="./images/Family Values Shopping.png" alt="">
+                    </figure>
+                    <p>Tu canasta está vacía</p>
+                    <button id="btnCarrito" class="pointer">Agregar productos</button>
+                </div>
+                <div class="carritoLleno" id="carritoLleno">
+                    <div class="infoProduct" id="productosCarrito">
+    
+                    </div>
+                    <div class="btnPagoCarrito" id="btnPagarCarrito">
+                        <p class="vaciarCanasta">Vaciar canasta</p>
+                        <div class="btnPagoCarritoBottom pointer">
+                            <p id="quantity">0</p>
+                            <button id="btnPagoCarrito" class="pointer">Ir a pagar</button>
+                            <p id="valueQuantity">$0</p>
+    
+                        </div>
+                        
+    
+    
+                    </div>
+                    
+    
+            
+    
+                </div>
+            </div>
+        </article>
+        <article class="locations hidden" id="locations">
+            <div>
+                <figure class="locationModalImg">
+                    <img src="./images/cancel.png" id="cancelLocationModal" class="pointer">
+                </figure>
+            </div>
+            <p class="locationModal">¿Dónde quieres recibir tu pedido?</p>
+            <p class="locationModal2">
+                Para poder ofrecerte productos dentro de tu área, necesitamos tu dirección.
+            </p>
+            <div id="containerOptions" class="pointer">
+                <figure class="imgLocationModal">
+                    <img src="./images/locationmodal.png" alt="">
+                </figure>
+                <select id="optionsSelect" class="pointer">
+                    <option value="Selecciona tu direccion">Selecciona tu dirección</option>
+                </select>
+            </div>
+    
+            <button id="btnModalLocation" class="pointer">Confirmar</button>
+    
+    
+        </article>
+        
+    </div>
+    <div class="all2 hidden" id="all2">
+        <nav class="navHtml2">
+        </nav>
+        <div class="pagoHtml">
+            <figure class="topHtml2 pointer" id="btnCancelTop2">
+                <img src="./images/back.png" alt="back">
+               </a> 
+                <p>Volver</p>
+            </figure>
+    
+            <div class="pagos">
+                <section class="leftSidePago" id="pago2">
+                    
+                </section>
+                <section class="rightSidePago">
+                    <form class="form" id="form">
+                        <label class="labels " id="correo">Correo electrónico</label>
+                        <input id="label1" type="text" class="input" maxlength="30" name="cardCorreo">
+                        <a class="errorHidden invisible" id="error1">Correo inválido</a>
+    
+                        <label class="labels2">Información de la tarjeta</label>
+                        <div class="infoCard input">
+                            <input id="label2" type="text" placeholder="1234 1234 1234 1234" class="inInput" maxlength="19"
+                                name="cardNumber">
+                            <figure class="figuresPago">
+                                <img src="./images/Card Brands.png" alt="visa">
+                                <img src="./images/Mastercard.svg" alt="mc">
+                                <img src="./images/AmericanExpress.svg" alt="azul">
+                                <img src="./images/Discover.svg" alt="white">
+                            </figure>
+                        </div>
+                        <a class="errorHidden invisible" id="error2">Formato erróneo de tarjeta</a>
+                        <section class="infoBottom">
+    
+                            <div class="infoDate">
+    
+                                <section class="expDate">
+                                    <div class="date input">
+                                        <div class="fecha ">
+                                            <input id="label3" type="text" placeholder="MM/YY" class="inInput">
+    
+                                        </div>
+                                        <a class="errorHidden invisible" id="error3">Valor incorrecto</a>
+                                    </div>
+                                    <div class="security">
+                                        <div class="cvc input">
+                                            <input id="label4" type="number" placeholder="CVC" name="cvc" class="inInput">
+                                            <figure>
+                                                <img src="./images/CVC Card.svg" alt="">
+                                            </figure>
+                                        </div>
+                                        <a class="errorHidden invisible" id="error4">Valor incorrecto</a>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="nameClient ">
+                                <div class="infoClient">
+                                    <label class="labels">Nombre de la tarjeta
+                                    </label>
+                                    <input type="text" id="label5" class="input">
+                                </div>
+                                <a class="errorHidden invisible" id="error5">Solo letras son permitidas</a>
+    
+                                
+                            </div>
+                        </section>
+    
+                        <button type="submit" id="submit" class="pointer">$0</button>
+    
+                    </form>
+    
+                </section>
+                
+    
+    
+            </div>
+    
+        </div>
+    
+
+    </div>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js" text="text/javascript"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
